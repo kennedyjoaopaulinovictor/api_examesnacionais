@@ -2,23 +2,13 @@
   "provincias": [
     { "id": 1, "nome": "LUANDA" },
     { "id": 2, "nome": "BENGUELA" },
-    { "id": 3, "nome": "HUÍLA" },
-    { "id": 4, "nome": "CABINDA" },
-    { "id": 5, "nome": "UÍGE" },
-    { "id": 6, "nome": "MALANJE" }
+    { "id": 3, "nome": "HUÍLA" }
   ],
 
   "municipios": [
     { "id": 1, "provincia_id": 1, "nome": "TALATONA" },
     { "id": 2, "provincia_id": 1, "nome": "CAZENGA" },
-    { "id": 3, "provincia_id": 1, "nome": "VIANA" },
-    { "id": 4, "provincia_id": 1, "nome": "MAIANGA" },
-    { "id": 5, "provincia_id": 1, "nome": "KILAMBA" },
-    { "id": 6, "provincia_id": 2, "nome": "BENGUELA" },
-    { "id": 7, "provincia_id": 2, "nome": "LOBITO" },
-    { "id": 8, "provincia_id": 2, "nome": "BAÍA FARTA" },
-    { "id": 9, "provincia_id": 3, "nome": "LUBANGO" },
-    { "id": 10, "provincia_id": 3, "nome": "CHIBIA" }
+    { "id": 3, "provincia_id": 1, "nome": "VIANA" }
   ],
 
   "escolas": [
@@ -28,53 +18,19 @@
       "nome": "COMPLEXO ESCOLAR PRIVADO C.A.T",
       "provincia_id": 1,
       "municipio_id": 1,
-      "natureza": "PRIVADA",
-      "endereco": "Talatona, Luanda",
-      "telefone": "+244 999 999 001"
+      "natureza": "PRIVADA"
     },
     {
       "id": 2,
       "codigo": "ESC002",
       "nome": "ESCOLA PRIMÁRIA DO KINAXIXI",
       "provincia_id": 1,
-      "municipio_id": 4,
-      "natureza": "PUBLICA",
-      "endereco": "Kinaxixi, Luanda",
-      "telefone": "+244 999 999 002"
-    },
-    {
-      "id": 3,
-      "codigo": "ESC003",
-      "nome": "ESCOLA 11 DE NOVEMBRO",
-      "provincia_id": 1,
       "municipio_id": 2,
-      "natureza": "PUBLICA",
-      "endereco": "Cazenga, Luanda",
-      "telefone": "+244 999 999 003"
-    },
-    {
-      "id": 4,
-      "codigo": "ESC004",
-      "nome": "ESCOLA NGOLA KILUANJE",
-      "provincia_id": 1,
-      "municipio_id": 3,
-      "natureza": "PUBLICA",
-      "endereco": "Viana, Luanda",
-      "telefone": "+244 999 999 004"
-    },
-    {
-      "id": 5,
-      "codigo": "ESC005",
-      "nome": "COLÉGIO SÃO FRANCISCO",
-      "provincia_id": 2,
-      "municipio_id": 6,
-      "natureza": "PRIVADA",
-      "endereco": "Benguela Centro",
-      "telefone": "+244 999 999 005"
+      "natureza": "PUBLICA"
     }
   ],
 
-  "classes": [
+  "classes_exame": [
     { "id": 1, "nome": "6ª", "descricao": "6ª CLASSE" },
     { "id": 2, "nome": "9ª", "descricao": "9ª CLASSE" },
     { "id": 3, "nome": "12ª", "descricao": "12ª CLASSE" }
@@ -82,40 +38,66 @@
 
   "modulos": [
     {
+      "id": 1,
+      "classe_id": 1,
       "classe": "6ª",
-      "local": "SALA 1,2,3",
-      "turmas": ["A", "B", "C"],
-      "disciplinas": [
-        { "codigo": "61", "nome": "LÍNGUA PORTUGUESA" },
-        { "codigo": "62", "nome": "MATEMÁTICA" },
-        { "codigo": "63", "nome": "ESTUDO DO MEIO" }
-      ]
+      "modulo": "Módulo 1",
+      "sala": 1,
+      "turma": "E3596C6P1A2025S1T20896",
+      "disciplinas": ["61 - LÍNGUA PORTUGUESA", "62 - MATEMÁTICA"]
     },
     {
+      "id": 2,
+      "classe_id": 1,
+      "classe": "6ª",
+      "modulo": "Módulo 2",
+      "sala": 2,
+      "turma": "E3596C6P2A2025S2T20901",
+      "disciplinas": ["63 - ESTUDO DO MEIO", "64 - CIÊNCIAS NATURAIS"]
+    },
+    {
+      "id": 3,
+      "classe_id": 2,
       "classe": "9ª",
-      "local": "SALA 4,5,6",
-      "turmas": ["D", "E", "F"],
-      "disciplinas": [
-        { "codigo": "71", "nome": "LÍNGUA PORTUGUESA" },
-        { "codigo": "72", "nome": "MATEMÁTICA" },
-        { "codigo": "73", "nome": "FÍSICA" },
-        { "codigo": "74", "nome": "QUÍMICA" },
-        { "codigo": "75", "nome": "BIOLOGIA" }
-      ]
+      "modulo": "Módulo 1",
+      "sala": 3,
+      "turma": "E3596C9P1A2025S3T10987",
+      "disciplinas": ["71 - LÍNGUA PORTUGUESA", "72 - MATEMÁTICA", "73 - FÍSICA"]
     },
     {
+      "id": 4,
+      "classe_id": 2,
+      "classe": "9ª",
+      "modulo": "Módulo 2",
+      "sala": 4,
+      "turma": "E3596C9P2A2025S4T10988",
+      "disciplinas": ["74 - QUÍMICA", "75 - BIOLOGIA", "76 - GEOGRAFIA"]
+    },
+    {
+      "id": 5,
+      "classe_id": 3,
       "classe": "12ª",
-      "local": "SALA 7,8,9",
-      "turmas": ["G", "H", "I"],
-      "disciplinas": [
-        { "codigo": "81", "nome": "LÍNGUA PORTUGUESA" },
-        { "codigo": "82", "nome": "MATEMÁTICA" },
-        { "codigo": "83", "nome": "FÍSICA" },
-        { "codigo": "84", "nome": "QUÍMICA" },
-        { "codigo": "85", "nome": "BIOLOGIA" },
-        { "codigo": "86", "nome": "GEOGRAFIA" }
-      ]
+      "modulo": "Módulo 1",
+      "sala": 5,
+      "turma": "E3596C12P1A2025S5T30765",
+      "disciplinas": ["81 - LÍNGUA PORTUGUESA", "82 - MATEMÁTICA", "83 - FÍSICA"]
+    },
+    {
+      "id": 6,
+      "classe_id": 3,
+      "classe": "12ª",
+      "modulo": "Módulo 2",
+      "sala": 6,
+      "turma": "E3596C12P2A2025S6T30766",
+      "disciplinas": ["84 - QUÍMICA", "85 - BIOLOGIA", "86 - GEOGRAFIA", "87 - HISTÓRIA"]
     }
+  ],
+
+  "escola_classes": [
+    { "id": 1, "escola_id": 1, "classe_id": 1 },
+    { "id": 2, "escola_id": 1, "classe_id": 2 },
+    { "id": 3, "escola_id": 1, "classe_id": 3 },
+    { "id": 4, "escola_id": 2, "classe_id": 1 }
   ],
 
   "alunos": [
@@ -127,10 +109,8 @@
       "sexo": "F",
       "idade": 11,
       "classe": "6ª",
-      "turma": "A",
-      "escola_id": 1,
-      "data_nascimento": "2014-03-15",
-      "encarregado": "MARIA SILVA"
+      "modulo_id": 1,
+      "escola_id": 1
     },
     {
       "id": 2,
@@ -140,9 +120,8 @@
       "sexo": "F",
       "idade": 11,
       "classe": "6ª",
-      "turma": "B",
-      "escola_id": 1,
-      "data_nascimento": "2014-05-22"
+      "modulo_id": 1,
+      "escola_id": 1
     },
     {
       "id": 3,
@@ -152,9 +131,8 @@
       "sexo": "F",
       "idade": 12,
       "classe": "6ª",
-      "turma": "A",
-      "escola_id": 1,
-      "data_nascimento": "2013-11-30"
+      "modulo_id": 2,
+      "escola_id": 1
     },
     {
       "id": 4,
@@ -164,104 +142,8 @@
       "sexo": "F",
       "idade": 14,
       "classe": "9ª",
-      "turma": "D",
-      "escola_id": 1,
-      "data_nascimento": "2011-08-12"
-    },
-    {
-      "id": 5,
-      "codigo": "1312673AN2014",
-      "nome": "ANTÓNIO PRUDENTE SOARES",
-      "identificacao": "YED47627",
-      "sexo": "M",
-      "idade": 14,
-      "classe": "9ª",
-      "turma": "E",
-      "escola_id": 1,
-      "data_nascimento": "2011-02-28"
-    },
-    {
-      "id": 6,
-      "codigo": "1313382AU2014",
-      "nome": "AURICE MARIA LUBÃO TELLO PEREIRA",
-      "identificacao": "022265127LA056",
-      "sexo": "F",
-      "idade": 17,
-      "classe": "12ª",
-      "turma": "G",
-      "escola_id": 1,
-      "data_nascimento": "2008-07-19"
-    },
-    {
-      "id": 7,
-      "codigo": "1312739CA2013",
-      "nome": "CAMILA TAVARES SERRA COELHO",
-      "identificacao": "020823925LA052",
-      "sexo": "F",
-      "idade": 18,
-      "classe": "12ª",
-      "turma": "H",
-      "escola_id": 1,
-      "data_nascimento": "2007-12-05"
-    },
-    {
-      "id": 8,
-      "codigo": "1313472CH2015",
-      "nome": "CHRISTOPHER LÚCIO FIGUEIRA LONDA",
-      "identificacao": "023977887LA051",
-      "sexo": "M",
-      "idade": 10,
-      "classe": "6ª",
-      "turma": "C",
-      "escola_id": 2,
-      "data_nascimento": "2015-01-10"
-    },
-    {
-      "id": 9,
-      "codigo": "1315276DA2014",
-      "nome": "DAIANE DIANDRA DE ARAGÃO MATIAS",
-      "identificacao": "023875200LA056",
-      "sexo": "F",
-      "idade": 11,
-      "classe": "6ª",
-      "turma": "B",
-      "escola_id": 2,
-      "data_nascimento": "2014-06-18"
-    },
-    {
-      "id": 10,
-      "codigo": "1314624DA2013",
-      "nome": "DAVI BRAGA FROTA",
-      "identificacao": "GL099535",
-      "sexo": "M",
-      "idade": 12,
-      "classe": "6ª",
-      "turma": "A",
-      "escola_id": 3,
-      "data_nascimento": "2013-04-25"
-    }
-  ],
-
-  "dashboard": [
-    {
-      "escola_id": 1,
-      "ano_letivo": "2025/2026",
-      "total_alunos": 6,
-      "alunos_por_classe": {
-        "6ª": 3,
-        "9ª": 2,
-        "12ª": 1
-      }
-    },
-    {
-      "escola_id": 2,
-      "ano_letivo": "2025/2026",
-      "total_alunos": 2,
-      "alunos_por_classe": {
-        "6ª": 2,
-        "9ª": 0,
-        "12ª": 0
-      }
+      "modulo_id": 3,
+      "escola_id": 1
     }
   ]
 }
